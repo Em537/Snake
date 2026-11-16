@@ -6,6 +6,11 @@ SRC = src/main.cpp
 
 $(PROJECT): $(SRC)
 	$(CXX) $(CFLAGS) $(SRC) -o $@ $(LDLIBS)
+	./game
+run:
+	$(CXX) $(CFLAGS) $(SRC) -o $@ $(LDLIBS)
+	./game
 
 clean:
 	rm -rf $(PROJECT) $(PROJECT).dSYM
+.PHONY: run clean
