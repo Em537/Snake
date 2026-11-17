@@ -34,8 +34,6 @@ int main(void)
     const int dist_tile = 93;
 
 
-
-
     std::vector<Tile> tiles;
     for (int row = 0; row < 10; row++) {
         for (int i = 0; i < 10; i++) {
@@ -57,7 +55,7 @@ int main(void)
             DrawRectangle(tile.x, tile.y, tile.length, tile.length, DARKGREEN);
         } 
         for (int i = 0; i < 3; i++) {
-            DrawRectangle(tiles[i].x, tiles[i].y, tiles[i].length, tiles[i].length);
+            DrawRectangle(tiles[i].x, tiles[i].y, tiles[i].length, tiles[i].length, GREEN);
         }
 
         EndDrawing();
